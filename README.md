@@ -172,52 +172,40 @@ endmodule
 ## SR FLIPFLOP
 
 ### RTL LOGIC FOR FLIPFLOPS 
-![](sr.png)
+![image](https://github.com/Pavan-Gv/Experiment--05-Implementation-of-flipflops-using-verilog/assets/94827772/cb457270-555c-4170-a58f-c16769916456)
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
-![](SRtime.png)
+![image](https://github.com/Pavan-Gv/Experiment--05-Implementation-of-flipflops-using-verilog/assets/94827772/6f9d0de3-3426-47dc-b678-cab0071f2391)
+
 
 ## JK FLIPFLOP
 
 ### RTL LOGIC FOR FLIPFLOPS 
-![](jk.png)
-
-
+![image](https://github.com/Pavan-Gv/Experiment--05-Implementation-of-flipflops-using-verilog/assets/94827772/b464a933-1655-437e-bae2-5435c3586fe9)
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS
-![](JKtime.png)
+![image](https://github.com/Pavan-Gv/Experiment--05-Implementation-of-flipflops-using-verilog/assets/94827772/dae37274-c0a5-4ad8-b09d-7d8129212e74)
 
 ## D FLIPFLOP
 
 ### RTL LOGIC FOR FLIPFLOPS 
-![](Drtl.png)
-
-
-
-
-
-
+![image](https://github.com/Pavan-Gv/Experiment--05-Implementation-of-flipflops-using-verilog/assets/94827772/cb8fd0a6-3361-4bf9-a6a6-7c7fd731a813)
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
-![](Dtime.png)
+![image](https://github.com/Pavan-Gv/Experiment--05-Implementation-of-flipflops-using-verilog/assets/94827772/1ecb476a-db11-4976-b8ad-ae2e6a26f985)
+
 ## T FLIPFLOP
 
 ### RTL LOGIC FOR FLIPFLOPS 
-![](Trtl.png)
 
-
-
-
-
-
+![image](https://github.com/Pavan-Gv/Experiment--05-Implementation-of-flipflops-using-verilog/assets/94827772/5b319436-95f6-4d1a-88a4-4ccc670bc677)
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
-![](Ttime.png)
-
+![image](https://github.com/Pavan-Gv/Experiment--05-Implementation-of-flipflops-using-verilog/assets/94827772/167fef1e-90d3-4088-a81d-9a278d4a413a)
 
 
 ### RESULTS 
