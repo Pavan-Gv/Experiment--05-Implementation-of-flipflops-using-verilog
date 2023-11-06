@@ -169,44 +169,32 @@ nand(qbar,r,q);
 endmodule
 ```
 
-## SR FLIPFLOP
-
 ### RTL LOGIC FOR FLIPFLOPS 
-![image](https://github.com/Pavan-Gv/Experiment--05-Implementation-of-flipflops-using-verilog/assets/94827772/cb457270-555c-4170-a58f-c16769916456)
+#### SR Flipflop:
+![image](https://github.com/ShamRathan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/93587823/a05a5ea4-1e41-4116-a769-4fb705fb555e)
+
+#### JK Flipflop:
+![image](https://github.com/ShamRathan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/93587823/b583bd53-c7ec-486b-9c1f-9475821b2462)
+
+#### D Flipflop:
+![image](https://github.com/ShamRathan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/93587823/e3778472-cc7d-4a15-9f02-767f5b6b971c)
+#### T Flipflop:
+![image](https://github.com/ShamRathan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/93587823/addc0b3d-274c-4862-a0f8-489f3f019599)
 
 
-### TIMING DIGRAMS FOR FLIP FLOPS 
-![image](https://github.com/Pavan-Gv/Experiment--05-Implementation-of-flipflops-using-verilog/assets/94827772/6f9d0de3-3426-47dc-b678-cab0071f2391)
 
+### OUTPUT WAVEFORM:
+#### SR Flipflop:
+![image](https://github.com/ShamRathan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/93587823/302be0bd-c805-4230-91ff-cfc3ca62a71b)
 
-## JK FLIPFLOP
+#### JK Flipflop:
+![image](https://github.com/ShamRathan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/93587823/00ec9100-2197-4031-b1ff-1103d1057eb0)
 
-### RTL LOGIC FOR FLIPFLOPS 
-![image](https://github.com/Pavan-Gv/Experiment--05-Implementation-of-flipflops-using-verilog/assets/94827772/b464a933-1655-437e-bae2-5435c3586fe9)
+#### D Flipflop:
+![image](https://github.com/ShamRathan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/93587823/d1c8b7d6-4d9a-4beb-88be-f6d1bba18c86)
 
-
-### TIMING DIGRAMS FOR FLIP FLOPS
-![image](https://github.com/Pavan-Gv/Experiment--05-Implementation-of-flipflops-using-verilog/assets/94827772/dae37274-c0a5-4ad8-b09d-7d8129212e74)
-
-## D FLIPFLOP
-
-### RTL LOGIC FOR FLIPFLOPS 
-![image](https://github.com/Pavan-Gv/Experiment--05-Implementation-of-flipflops-using-verilog/assets/94827772/cb8fd0a6-3361-4bf9-a6a6-7c7fd731a813)
-
-
-### TIMING DIGRAMS FOR FLIP FLOPS 
-![image](https://github.com/Pavan-Gv/Experiment--05-Implementation-of-flipflops-using-verilog/assets/94827772/1ecb476a-db11-4976-b8ad-ae2e6a26f985)
-
-## T FLIPFLOP
-
-### RTL LOGIC FOR FLIPFLOPS 
-
-![image](https://github.com/Pavan-Gv/Experiment--05-Implementation-of-flipflops-using-verilog/assets/94827772/5b319436-95f6-4d1a-88a4-4ccc670bc677)
-
-
-### TIMING DIGRAMS FOR FLIP FLOPS 
-![image](https://github.com/Pavan-Gv/Experiment--05-Implementation-of-flipflops-using-verilog/assets/94827772/167fef1e-90d3-4088-a81d-9a278d4a413a)
-
+#### T Flipflop:
+![image](https://github.com/ShamRathan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/93587823/ac1b9798-ecca-4aa0-a0e3-c793294a89ae)
 
 ### RESULTS 
 All the flipflops are implemented using verilog programming and their functionality has been validated using functional tables. 
