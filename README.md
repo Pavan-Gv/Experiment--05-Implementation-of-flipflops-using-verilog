@@ -1,7 +1,10 @@
-# Experiment--05-Implementation-of-flipflops-using-verilog
-### AIM: To implement all the flipflops using verilog and validating their functionality using their functional tables
-### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
-### SOFTWARE REQUIRED:   Quartus prime
+# Experiment 05 Implementation of flipflops using verilog
+### AIM: 
+To implement all the flipflops using verilog and validating their functionality using their functional tables
+### HARDWARE REQUIRED:  
+PC, Cyclone II , USB flasher
+### SOFTWARE REQUIRED: 
+Quartus prime
 ### THEORY 
 SR Flip-Flop
 SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure.
@@ -102,73 +105,85 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 ### Procedure
-## Step1:- Create a new project in QuartusII software. 
-## Step2:- Make a suitable name for the project which should be used as the module name in the programming part.
-## Step3:- Declare module, input and output variables. 
-## Step4:- Declare wire variables.
-## Step5:- End the module. 
-## Step6:- Run the program and rtl view simulation. Create the timing diagram for each flipflop. 
+1.Create a project with required entities.
+
+2.Create a module along with respective file name.
+
+3.Run the respective programs for the given boolean equations.
+
+4.Run the module and get the respective RTL outputs.
+
+5.Create university program(VWF) for getting timing diagram.
+
+6.Give the respective inputs for timing diagram and obtain the results.
 
 
 
 ### PROGRAM 
-**Program for flipflops  and verify its truth table in quartus using Verilog programming.**
 ```
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: G Venkata Pavan Kumar
-RegisterNumber:  212221240013
+RegisterNumber: 212221240013
 ```
-## SR FLIPFLOP
+#### SR Flipflop:
 ```
-module sr(s,r,clk,q,qbar);
+module flipflop(s,r,Q,Qbar,clk);
 input s,r,clk;
-output q,qbar;
-wire x,y;
-nand(x,s,clk);
-nand(y,r,clk);
-nand(q,x,qbar);
-nand(qbar,y,q);
+output reg Q,Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=s|(Q&(~r));
+Qbar=r|(Qbar&(~s));
+end
 endmodule
 ```
-
-## JK FLIPFLOP
+#### JKFlipflop:
 ```
-module jk(j,k,clk,q,qbar);
+module jkflipflop(j,k,clk,q,qbar);
 input j,k,clk;
-output q,qbar;
-wire p,s;
-nand(p,j,clk,qbar);
-nand(s,k,clk,q);
-nand(q,p,qbar);
-nand(qbar,s,q);
+output reg q;
+output reg qbar;
+initial q=0;
+initial qbar=1;
+always @(posedge clk)
+begin
+q=(j&(~q))|((~k)&q);
+qbar=((~j)&q)|(k &(~q));
+end 
 endmodule
 ```
-
-## D FLIPFLOP
+#### D Flipflop:
 ```
-module D(d,clk,q,qbar);
-input d,clk;
-output q,qbar;
-assign dbar = !d;
-wire x,y;
-nand(x,d,clk);
-nand(y,dbar,clk);
-nand(q,x,y,qbar);
-nand(qbar,y,q);
+module EXDflipflop(D,clk,Q,Qbar);
+input D,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=D;
+Qbar=~D;
+end
 endmodule
 ```
-## T FLIPFLOP
+#### T Flipflop:
 ```
-module T(t,clk,q,qbar);
-input t,clk;
-output q,qbar;
-wire s,r;
-nand(s,t,clk,qbar);
-nand(r,t,clk,q);
-nand(q,s,qbar);
-nand(qbar,r,q);
+module t(T,clk,q,qbar);
+input T,clk;
+output reg q;
+output reg qbar;
+initial q=0;
+initial qbar=1;
+always @ (posedge clk)
+begin
+q=(T&(~q))|((~T)&q);
+qbar=(~q);
+end
 endmodule
 ```
-
 ### RTL LOGIC FOR FLIPFLOPS 
 #### SR Flipflop:
 ![image](https://github.com/ShamRathan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/93587823/a05a5ea4-1e41-4116-a769-4fb705fb555e)
@@ -196,5 +211,10 @@ endmodule
 #### T Flipflop:
 ![image](https://github.com/ShamRathan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/93587823/ac1b9798-ecca-4aa0-a0e3-c793294a89ae)
 
+
+
+
+
+
 ### RESULTS 
-All the flipflops are implemented using verilog programming and their functionality has been validated using functional tables. 
+All the flipflops are implemented using verilog and their functionality has been validated using their functional tables.
